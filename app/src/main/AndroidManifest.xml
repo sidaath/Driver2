@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.driver2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Driver2">
+        <activity android:name=".DriverSetOrderOfPickup"></activity>
+        <activity android:name=".DriverDailyMap" />
+        <activity android:name=".DriverMessageSingleParentConfirmation" />
+        <activity android:name=".DriverMessageAllParentsConfirmation" />
+        <activity android:name=".DriverMessageSingleParent" />
+        <activity android:name=".DriverMessageAllParents" />
+        <activity android:name=".DriverMessageInbox" />
+        <activity android:name=".DriverRegisteredStudents" />
+        <activity android:name=".DriverPayments" />
+        <activity android:name=".DriverTodaysAttendance" />
+        <activity android:name=".DriverMessages" />
+        <activity android:name=".DriverStartJourney" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

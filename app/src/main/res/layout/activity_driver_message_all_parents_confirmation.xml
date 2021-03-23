@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriverMessageAllParentsConfirmation">
+
+    <TextView
+        android:id="@+id/txtCheckBroadcastMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Please check message and confirm"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBroadCastMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:lines="10"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckBroadcastMessage" />
+
+    <Button
+        android:id="@+id/btnEditBroadcastMessage"
+        android:layout_marginTop="72dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:text="Edit"
+        android:onClick="editBroadcast"
+        app:layout_constraintEnd_toStartOf="@+id/btnSendBroadcastMessage"
+        app:layout_constraintTop_toBottomOf="@+id/txtBroadCastMessage" />
+
+    <Button
+        android:id="@+id/btnSendBroadcastMessage"
+        android:layout_width="150dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBroadCastMessage" />
+</androidx.constraintlayout.widget.ConstraintLayout>
